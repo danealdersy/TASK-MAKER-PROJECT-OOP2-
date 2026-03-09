@@ -1,1 +1,21 @@
+public class AddTask extends TaskOperation {
+
+    public AddTask(TaskManager manager) {
+        super(manager);
+    }
+
+    public void execute() {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Input task description: ");
+        String desc = sc.nextLine();
+
+        manager.addTask(desc);
+
+        System.out.println("Task added successfully.");
+
+    }
+
+}
 
