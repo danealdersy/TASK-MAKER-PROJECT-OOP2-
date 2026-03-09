@@ -1,1 +1,20 @@
+public class RemoveTask extends TaskOperation {
+
+    public RemoveTask(TaskManager manager) {
+        super(manager);
+    }
+
+    public void execute() {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Input task id to remove: ");
+        int id = sc.nextInt();
+
+        manager.removeTask(id);
+
+    }
+
+}
+
 
