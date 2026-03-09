@@ -13,9 +13,10 @@ class Menu {
     public int getChoice() {
         System.out.print("Enter choice: ");
         while (!scanner.hasNextInt()) {
-            System.out.print("Invalid input. Enter a number: ");
+            System.out.print("Invalid input! Enter a number: ");
             scanner.next();
         }
         return scanner.nextInt();
     }
+
 }
