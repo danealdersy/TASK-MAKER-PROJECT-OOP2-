@@ -1,1 +1,18 @@
+public class CompleteTask extends TaskOperation {
 
+    public CompleteTask(TaskManager manager) {
+        super(manager);
+    }
+
+    public void execute() {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Input task id to complete: ");
+        int id = sc.nextInt();
+
+        manager.completeTask(id);
+
+    }
+
+}
